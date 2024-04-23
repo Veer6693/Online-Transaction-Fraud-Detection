@@ -4,8 +4,8 @@ matplotlib
 seaborn
 plotly
 kaggle
-warnings
-sklearn
+scikit-learn
 xgboost
 optuna
+dill
 # -e .
