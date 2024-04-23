@@ -2,4 +2,10 @@ pandas
 numpy
 matplotlib
 seaborn
--e .
+plotly
+kaggle
+warnings
+sklearn
+xgboost
+optuna
+# -e .
