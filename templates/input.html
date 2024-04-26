@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="/static/css/input.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form method="POST" action="/predict">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="transaction_amount">Transaction Amount:</label>
+                        <input type="number" class="form-control" id="transaction_amount" name="transaction_amount"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product_category">Product Category:</label>
+                        <select id="product_category" name="product_category" class="form-control" required>
+                            <option value="">Select Product Category</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="health & beauty">Health & Beauty</option>
+                            <option value="toys & games">Toys & Games</option>
+                            <option value="home & garden">Home & Garden</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment_method">Payment Method:</label>
+                        <select id="payment_method" name="payment_method" class="form-control" required>
+                            <option value="">Select Payment Method</option>
+                            <option value="credit card">Credit Card</option>
+                            <option value="debit card">Debit Card</option>
+                            <option value="bank transfer">Bank Transfer</option>
+                            <option value="PayPal">PayPal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account_create_days">Account create day:</label>
+                        <input type="date" class="form-control" id="account_create_days"
+                            name="account_create_days" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer_age">Your Age:</label>
+                        <input type="number" class="form-control" id="customer_age" name="customer_age" required>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="transaction_datetime">Transaction Date and Time:</label>
+                        <input type="datetime-local" class="form-control" id="transaction_datetime"
+                            name="transaction_date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity:</label>
+                        <select id="quantity" name="quantity" class="form-control" required>
+                            <option value="">Select Quentity</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="device_used">Device Used:</label>
+                        <select id="device_used" name="device_used" class="form-control" required>
+                            <option value="">Select Device</option>
+                            <option value="mobile">mobile</option>
+                            <option value="tablet">tablet</option>
+                            <option value="desktop">desktop</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="billing_address">Billing Address:</label>
+                        <input type="text" class="form-control" id="billing_address" name="billing_address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="shipping_address">Shipping Address:</label>
+                        <input type="text" class="form-control" id="shipping_address" name="shipping_address" required>
+                        <input type="checkbox" class="form-check-input" id="same_address">
+                        <label class="form-check-label" for="same_address">Same as Billing Address</label>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            
+            <button type="submit" class="button-56">SUBMIT</button>
+            
+        </form>
+        <center><h3>{% if prediction == 1 %}Fraudulent{% else %}Not Fraudulent{% endif %}</h3> </center>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="footer">
+            <p>Created by Veer © 2024 </p>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.twitter.com/">Twitter</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('same_address').addEventListener('change', function () {
+            if (this.checked) {
+                document.getElementById('shipping_address').value = document.getElementById('billing_address').value;
+            } else {
+                document.getElementById('shipping_address').value = '';
+            }
+        });
+
+
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+ 
+    background-image: url('/static/bg-image.jpg');
+
+    background-image: linear-gradient(to bottom, rgba(91, 179, 211, 0.741), rgba(255,255,255,0.5)), url('/static/bg-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #619eb27b;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    opacity: 0.9;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+
+  .button-56 {
+    align-items: center;
+    background-color: #3495cdc5;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    width: 20%;
+    padding: 0 25px;
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #10aae7;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+
+  
+  .footer {
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgba(98, 221, 180, 0.935);
+    padding: 10px;
+
+  }
+  
+  .footer a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    
+    
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+
+

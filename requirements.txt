@@ -8,4 +8,5 @@ scikit-learn
 xgboost
 optuna
 dill
+flask
 # -e .
