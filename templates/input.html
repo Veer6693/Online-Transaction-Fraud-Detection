@@ -25,15 +25,15 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="product_category">Product Category:</label>
-                        <select id="product_category" name="product_category" class="form-control" required>
-                            <option value="">Select Product Category</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="clothing">Clothing</option>
-                            <option value="health & beauty">Health & Beauty</option>
-                            <option value="toys & games">Toys & Games</option>
-                            <option value="home & garden">Home & Garden</option>
-                        </select>
+                        <label for="account_create_days">Account create day:</label>
+                        <input type="date" class="form-control" id="account_create_days" name="account_create_days"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="transaction_datetime">Transaction Date and Time:</label>
+                        <input type="datetime-local" class="form-control" id="transaction_datetime"
+                            name="transaction_date" required>
                     </div>
 
                     <div class="form-group">
@@ -47,11 +47,7 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="account_create_days">Account create day:</label>
-                        <input type="date" class="form-control" id="account_create_days" name="account_create_days"
-                            required>
-                    </div>
+                    
 
                     <div class="form-group">
                         <label for="customer_age">Your Age:</label>
@@ -62,11 +58,29 @@
                 </div>
 
                 <div class="col-md-6">
+
                     <div class="form-group">
-                        <label for="transaction_datetime">Transaction Date and Time:</label>
-                        <input type="datetime-local" class="form-control" id="transaction_datetime"
-                            name="transaction_date" required>
+                        <label for="device_used">Device Used:</label>
+                        <select id="device_used" name="device_used" class="form-control" required>
+                            <option value="">Select Device</option>
+                            <option value="mobile">mobile</option>
+                            <option value="tablet">tablet</option>
+                            <option value="desktop">desktop</option>
+                        </select>
                     </div>
+                    
+                    <div class="form-group">
+                        <label for="product_category">Product Category:</label>
+                        <select id="product_category" name="product_category" class="form-control" required>
+                            <option value="">Select Product Category</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="health & beauty">Health & Beauty</option>
+                            <option value="toys & games">Toys & Games</option>
+                            <option value="home & garden">Home & Garden</option>
+                        </select>
+                    </div>
+                    
 
                     <div class="form-group">
                         <label for="quantity">Quantity:</label>
@@ -80,15 +94,6 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
-                        <label for="device_used">Device Used:</label>
-                        <select id="device_used" name="device_used" class="form-control" required>
-                            <option value="">Select Device</option>
-                            <option value="mobile">mobile</option>
-                            <option value="tablet">tablet</option>
-                            <option value="desktop">desktop</option>
-                        </select>
-                    </div>
 
                     <div class="form-group">
                         <label for="billing_address">Billing Address:</label>
