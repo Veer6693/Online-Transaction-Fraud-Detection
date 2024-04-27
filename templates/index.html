@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fraud Detection</title>
-<link rel="stylesheet" href="/static/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+
+
 </head>
+
 <body>
-<div class="container">
-  <h1>Welcome to Fraud Detection</h1>
-  <a href="{{ url_for('predict') }}" class="btn">Let's Begin</a>
-</div>
+
+  
+
+  <center><h1 class="glitch">Welcome to Fraud Detection</h1></center>
+ 
+  <div class="scanlines"></div></center>
+
+
+  <div class="container">
+
+      <a href="{{ url_for('predict') }}">
+        <button class="button">Click to Enter</button>
+      </a>
+
+  </div>
 </body>
+
 </html>

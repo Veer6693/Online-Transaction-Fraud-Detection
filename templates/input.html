@@ -7,9 +7,11 @@
     <title>Fraud Detection</title>
     <link rel="stylesheet" href="/static/css/input.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
 </head>
 
 <body>
+
 
 
     <div class="container">
@@ -47,8 +49,8 @@
 
                     <div class="form-group">
                         <label for="account_create_days">Account create day:</label>
-                        <input type="date" class="form-control" id="account_create_days"
-                            name="account_create_days" required>
+                        <input type="date" class="form-control" id="account_create_days" name="account_create_days"
+                            required>
                     </div>
 
                     <div class="form-group">
@@ -77,7 +79,7 @@
                             <option value="5">5</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="device_used">Device Used:</label>
                         <select id="device_used" name="device_used" class="form-control" required>
@@ -99,27 +101,38 @@
                         <input type="checkbox" class="form-check-input" id="same_address">
                         <label class="form-check-label" for="same_address">Same as Billing Address</label>
                     </div>
-                    
+
 
                 </div>
             </div>
 
-            
+
             <button type="submit" class="button-56">SUBMIT</button>
-            
+
         </form>
-        <center><h3>{% if prediction == 1 %}Fraudulent{% else %}Not Fraudulent{% endif %}</h3> </center>
+        <center>
+            <h3>{% if prediction == 1 %}Transaction is Fraudulent{% else %}Transaction is Not Fraudulent{% endif %}</h3>
+        </center>
 
     </div>
 
     <div class="container-fluid">
         <div class="footer">
-            <p>Created by Veer © 2024 </p>
-            <a href="https://www.facebook.com/">Facebook</a>
-            <a href="https://www.twitter.com/">Twitter</a>
-            <a href="https://www.linkedin.com/">LinkedIn</a>
+
+            <ul>
+                <li><a href="https://www.linkedin.com/in/veer-patel-602a76215/" , target="_blank"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/Veer6693" , target="_blank"><i class="fab fa-github"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.kaggle.com/veerpatel6693" , target="_blank"><i class="fab fa-kaggle"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+
         </div>
     </div>
+
+
+
 
 
     <script>
