@@ -160,5 +160,8 @@ cython_debug/
 #.idea/
 
 # Dataset
-artifacts
+artifacts/test.csv
+artifacts/train.csv
 notebook/data
+pr1-passkey.pem
+pr1-passkey.ppk
