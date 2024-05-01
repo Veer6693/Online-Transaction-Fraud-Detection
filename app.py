@@ -65,10 +65,14 @@ def predict():
         predict_pipeline = PredictPipeline()
         prediction = predict_pipeline.predict(data)[0]
 
+        if prediction == 1:
+            predict = 'Transaction is Fraudulent'
+        else:
+            predict = 'Transaction is not Fraudulent'
 
-        return render_template('input.html', prediction=prediction)
+        return render_template('input.html', prediction=predict)
 
     return render_template('input.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
