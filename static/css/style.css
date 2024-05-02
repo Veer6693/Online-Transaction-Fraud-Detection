@@ -20,7 +20,7 @@ body {
 
 
 h1 {
-  /* font-size: 4em; */
+  font-size: 240%;
   padding: 10px;
   border-radius: 5px;
   background: linear-gradient(90deg, rgb(198, 218, 214) 0%, rgb(210, 255, 223) 25%,
@@ -109,13 +109,13 @@ html, body {
 
 
 .button {
-  /* min-width: 200px; */
-  /* min-height: 30px; */
+  min-width: 150px;
+  min-height: 30px;
   font-family: 'Nunito', sans-serif;
-  /* font-size: 22px; */
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
-  font-weight: 450;
+  font-weight: 50;
   color: #313133;
   background: #4FD1C5;
 background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
@@ -132,8 +132,8 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
 button::before {
 content: '';
   border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
+  min-width: calc(150px + 45px);
+  min-height: calc(30px + 16px);
   border: 6px solid #00FFCB;
   box-shadow: 0 0 60px rgba(0,255,203,.64);
   position: absolute;
