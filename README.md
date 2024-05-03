@@ -41,6 +41,6 @@ This project is currently deployed on Render. [Link](https://online-transaction-
 
 ## Website Preview
 ![Screenshot 2024-05-03 203810](https://github.com/Veer6693/PowerBI-Dashboard/assets/102231617/97962f46-0205-4dca-86b0-727c1456564a)
-![Screenshot 2024-05-03 204037](https://github.com/Veer6693/PowerBI-Dashboard/assets/102231617/8bbae45e-2df8-4950-8030-c993b9bc32c1)
+![Screenshot 2024-05-03 203941](https://github.com/Veer6693/PowerBI-Dashboard/assets/102231617/0d389b48-9c01-43ae-9db3-f8ea5def2c16)
 ![Screenshot 2024-05-03 204047](https://github.com/Veer6693/PowerBI-Dashboard/assets/102231617/5da082f6-0496-478d-9962-be4e907ba031)
 
