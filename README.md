@@ -14,6 +14,7 @@ This project tackles the challenge of identifying fraudulent transactions. Users
 ## Getting Started
 
 This project requires Python libraries like pandas, scikit-learn, xgboost, optuna, and Flask. Ensure you have them installed before proceeding.
+- dataset : [kaggle](https://www.kaggle.com/datasets/shriyashjagtap/fraudulent-e-commerce-transactions)
 
 To run the project locally:
 
@@ -23,9 +24,8 @@ To run the project locally:
 5. Access the web app at [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ## Project Structure
-- **data:** Contains the dataset used for training and evaluation.
-- **models:** Houses the implementation of various fraud detection models.
-- **preprocessing:** Includes code for data cleaning and feature engineering.
+- **artifacts:** Contains the dataset used for training and evaluation.
+- **components:** Includes code for data cleaning and feature engineering.
 - **utils:** Utility functions used throughout the project.
 - **app.py:** The main Flask application script.
 
